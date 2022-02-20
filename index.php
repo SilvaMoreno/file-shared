@@ -27,6 +27,7 @@ $files = listFoldersFiles('../');
 
 foreach ($files as $file) {
     echo $file ;
-    echo '<a href="/app1/download.php?file='.$file.'" target="_blank">baixar</a>';
+    echo '<a href="/file-shared/download.php?file='.$file.'" target="_blank">baixar</a>';
+    echo '<a href="/file-shared/download2.php?file='.htmlentities(urlencode($file)).'" target="_blank">baixar direto</a>';
     echo  '<br>';
 }
